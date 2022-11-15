@@ -6,6 +6,7 @@ import { Loading } from './src/components/Loading';
 import { Pools } from "./src/screens/Pools";
 
 import { THEME } from './src/styles/theme';
+import { SignIn } from "./src/screens/SignIn";
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_500Medium, Roboto_700Bold })
@@ -19,7 +20,7 @@ export default function App() {
           translucent
         />
 
-        { fontsLoaded ? <Pools /> : <Loading /> }
+        { fontsLoaded ? <SignIn /> : <Loading /> }
       </AuthContextProvider>
     </NativeBaseProvider>
   );

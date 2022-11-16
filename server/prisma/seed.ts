@@ -32,6 +32,7 @@ async function main() {
             secondTeamCountryCode: 'BR',
         }
     })
+    
 
     await prisma.game.create({
         data: {
